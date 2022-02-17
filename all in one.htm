@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>www.AIO.org</title>
+<link rel="stylesheet" href="css/bootstrap.css" />
+<script src="js/bootstrap.js"></script>
+<script src="jquery.js"></script>
+</head>
+<body background="images/all.png">
+<center><br/><br/><br/><br/>
+<div class="container">
+<div align="center" style="background-color:#000000" width="80" higth="80">
+<h1  style="color:#FFFFFF;font-family:Monotype Corsiva" style="border:#FFFFFF"><marquee>All in one!!!!!</marquee></h1></div>
+<br/><br/>
+<h1 style="font-family:Monotype Corsiva">
+<div class="btn-group" >
+<a href="allin one parts/login.htm"><button id="log" class="btn  btn-info btn-lg">LOG IN</button></a>
+<button id="mov" class="btn  btn-primary btn-lg">Movies</button>
+<button id="mus" class="btn  btn-danger btn-lg ">Music</button>
+<button id="tv" class="btn  btn-warning btn-lg">TV shows</button>
+<button id="wall" class="btn  btn-primary btn-lg">Wallpaper</button>
+<button id="app" class="btn  btn-danger btn-lg ">Apps</button>
+</div>
+</div>
+</h1>
+<script>
+$(document).ready(function(){
+$('#log').mouseenter(function(){
+$('#for').show();
+});
+});
+$(document).ready(function(){
+$('#mov').mouseenter(function(){
+$('#for').hide();
+});
+});
+$(document).ready(function(){
+$('#mov').mouseenter(function(){
+$('#mkv').show();
+});
+});
+$(document).ready(function(){
+$('#mus').mouseenter(function(){
+$('#for').hide();
+});
+});
+$(document).ready(function(){
+$('#mus').mouseenter(function(){
+$('#mkv').show();
+});
+});
+$(document).ready(function(){
+$('#log').mouseenter(function(){
+$('#mkv').hide();
+});
+});
+$(document).ready(function(){
+$('#tv').mouseenter(function(){
+$('#for').hide();
+});
+});
+$(document).ready(function(){
+$('#tv').mouseenter(function(){
+$('#mkv').show();
+});
+});
+$(document).ready(function(){
+$('#log').mouseenter(function(){
+$('#mkv').hide();
+});
+});
+$(document).ready(function(){
+$('#wall').mouseenter(function(){
+$('#for').hide();
+});
+});
+$(document).ready(function(){
+$('#wall').mouseenter(function(){
+$('#mkv').show();
+});
+});
+$(document).ready(function(){
+$('#log').mouseenter(function(){
+$('#mkv').hide();
+});
+});
+$(document).ready(function(){
+$('#app').mouseenter(function(){
+$('#for').hide();
+});
+});
+$(document).ready(function(){
+$('#app').mouseenter(function(){
+$('#mkv').show();
+});
+});
+$(document).ready(function(){
+$('#log').mouseenter(function(){
+$('#mkv').hide();
+});
+});
+
+</script>
+<div class="container" id="for" style="background-image: url(images/8777.jpg); display:none; width:600px;">
+<h1 style="font-family:Monotype Corsiva">LOG IN</h1>
+<form id="for" action="allin one parts/allinonemain.html" method="get" style="font-family:Monotype Corsiva">
+<table class="table table-bordered table-striped table-responsive table-condensed table-hover">
+<tr><td><label style="font-size:20px;font-weight:bold;font-family:Monotype Corsiva;">Name<label></td><td><input type="text" placeholder="Enter your name" size="30" style="text-indent:20px;height:30px;";/></td></tr>
+<tr><td><label style="font-size:20px;font-weight:bold;font-family:">Middle Name</label></td><td><input type="text" placeholder="Enter middle name" size="30"  style="text-indent:20px;height:30px"/></td></tr>
+<tr><td><label style="font-size:20px;font-weight:bold;font-family:">Last Name</label></td><td><input type="text" placeholder="Enter last name" size="30"  style="text-indent:20px;height:30px"/></td></tr>
+<tr><td><label style="font-size:20px;font-weight:bold;font-family:">Father's name</label></td><td><input type="text" placeholder="Enter father's name" size="30"  style="text-indent:20px;height:30px"/></td></tr>
+<tr><td><label style="font-size:20px;font-weight:bold;font-family:">Mother's name</label></td><td><input type="text" placeholder="Enter mother's name" size="30"  style="text-indent:20px;height:30px"/></td></tr>
+<tr><td><label style="font-size:20px;font-weight:bold;font-family:">Mobile no.</label></td><td><input type="number" placeholder="Enter mobile no." size="30"  style="text-indent:20px;height:30px"/></td></tr>
+<tr><td><label style="font-size:20px;font-weight:bold;font-family:">User ID</label></td><td><input type="text" placeholder="someone@example.com" size="30"  style="text-indent:20px;height:30px"/></td></tr>
+<tr><td><label style="font-size:20px;font-weight:bold;font-family:">Password</label></td><td><input type="number" placeholder="XXXXXXXXXX" size="30"  style="text-indent:20px;height:30px"></td></tr>
+<tr><td><label style="font-size:20px;font-weight:bold;font-family:">Confirm</label></td><td><input type="number" placeholder="Re-enter password" size="30"  style="text-indent:20px;height:30px"/></td></tr>
+<tr><td><label style="font-size:20px;font-weight:bold;font-family:">Pincode</label></td><td><input type="text" name="pin" size="40" placeholder="Enter pincode of your area" size="30"  style="text-indent:20px;height:30px"/></td></tr>
+<tr><td><label style="font-size:20px;font-weight:bold;font-family:">Address</label></td><td><textarea></textarea></td></tr>
+<tr><td><label style="font-size:20px;font-weight:bold;font-family:">Upload Image</label></td><td><input type="file"/></td></tr>
+<tr><td><label style="font-size:20px;font-weight:bold;font-family:">Choose Your Gender</label></td><td><input type="radio" value="m" name="gen" checked>Male<input type="radio" value="f" name="gen">Female</td>
+</tr>
+<tr><td><label style="font-size:20px;font-weight:bold;font-family:">Select Your Country</label></td><td><select>
+<option>India</option><option>America</option><option>Pakistan</option><option>Japan</option></select></td></tr>
+</table>
+<p><input type="submit" value="Next" />  <input type="reset" value="Clear"/></p>
+</form>
+</div>
+<div id="mkv" style=" background-color: #000000; width:300px; height:200px; display:none; font-family:Monotype Corsiva"><h2 style="background-color: #D7D8DB">Soory!!!!!<h4 style=" color:#FFFFFF">you have to log in first!!!!</h4><img src="images/download.jpg" width="175" height="115"/></h2></div>
+</center>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Form....</title>
+<script>
+                                                                                           function validateform(){
+var candidate_name=document.register.name.value;
+                       if(candidate_name==null || candidate_name==""){
+         alert("Please Enter your name.");
+                                                return false;
+}
+else if(document.register.pass.value.length<8 || document.register.pass.value.length>20){
+alert("Please enter password in more than 8 and less thAN 20 char.");
+return false;
+}
+                 
+else if(document.register.pin.value.length<6 || document.register.pin.value.length>6){
+alert("Please enter pincode in 6 digits only.");
+return false;
+}
+else if(isNaN(document.register.pin.value)){
+alert("Pincode must be in digits only!!");
+return false;
+}
+}
+</script>
+</head>
+<body font-family:Monotype Corsiva" >
+<center>
+<h1><u><i>Registration form.....!!!!</i></u></h1>
+<form name="register" onSubmit="return validateform()" action="" method="get">
+<table width="450px">
+<tr><td style="font-size:16.5px;font-family:Algerian"><label>Candidate name</label></td><td><input type="text" name="name" size="40"/></td></tr>
+<tr><td><label>Candidate roll no.</label></td><td><input type="number"/></td></tr>
+<tr><td>Father's name</td><td><input type="text"/></td></tr>
+<tr><td>Mother's name</td><td><input type="text"/></td></tr>
+<tr><td>Mobile no.</td><td><input type="number"/></td></tr>
+<tr><td>Username</td><td><input type="text"/></td></tr>
+<tr><td>password</td><td><input type="password" name="pass"/></td></tr>
+<tr><td>pincode</td><td><input type="text" name="pin" size="40"/></td></tr>
+<tr><td>Address</td><td><textarea></textarea></td></tr>
+<tr><td>upload Image</td><td><input type="file"/></td></tr>
+</table>
+<p><input type="submit" value="Submit"/>&nbsp&nbsp<input type="reset" value="Reset"/></p>
+</form>
+</center>
+</body>
+
+</html>
